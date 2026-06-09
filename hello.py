@@ -1,3 +1,1 @@
-print("Hello")
-name=input()
-age = 21
+print("Hello welcome to python!")
