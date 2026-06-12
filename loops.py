@@ -28,7 +28,7 @@ elif choice==3:
     print(i)
 
 elif choice==4:
-  num=82
+  num=567
   while True:
    n=int(input('enter here:'))
    if n==num:

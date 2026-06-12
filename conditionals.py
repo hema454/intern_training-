@@ -5,7 +5,7 @@ print("4.largest of three numbers")
 choice=int(input('enter here:'))
 
 if choice==1:
-  n=int(input('enter here:'))
+  n=int(input('enter number:'))
   if n>0:
     print("positive number")
   elif n<0:
