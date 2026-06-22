@@ -1,5 +1,5 @@
-from fastapi import FASTAPI, HTTPException
-from pydantic import BASEMODEL
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 
 
 tasks = []
