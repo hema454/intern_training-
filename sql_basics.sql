@@ -32,3 +32,13 @@ WHERE id = 3;
 
 SELECT name FROM users
 ORDER BY email;
+
+select * from users
+where name LIKE 'H%';
+
+select * from USERS
+where name LIKE '%a'
+ORDER BY id;
+
+select * from users
+where name LIKE '%e%';
