@@ -1,12 +1,6 @@
-create table users(
-id serial primary key,
-author varchar(40),
-email varchar(70)
-);
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
+    author VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL
 );
 
@@ -30,17 +24,16 @@ post_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 description varchar(1000)
 );
 
-insert into posts(id,post_id,title,description) values(1,101,'python','python basics'),
-(2,102,'sql','sql advanced'),
-(3,103,'java','java advanced '),
-(4,104,'data structures','data structutres and algorithm'),
-(5,105,'Artificial intelligence','algorithms');
+insert into posts(id,title,description) values(1,'python','python basics'),
+(2,'sql','sql advanced'),
+(3,'java','java advanced '),
+(4,'data structures','data structutres and algorithm'),
+(5,'Artificial intelligence','algorithms'),
+(1,'python advanced','full understanding of python advanced'),
+(1,'python framework','complete understanding of python framework'),
+(3,'java full stack','complete understanding of java developer');
 
 
-insert into posts(id,post_id,title,description) values(1,1011,'python advanced','full understanding of python advanced'),
-(1,1012,'python framework','complete understanding of python framework');
-
-insert into posts(id,post_id,title,description) values(3,1033,'java full stack','complete understanding of java developer');
 
 select author,title from
 users inner join posts
