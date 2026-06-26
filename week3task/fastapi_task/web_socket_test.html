@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>WebSocket Test</h2>
+
+<input id="msg">
+<button onclick="send()">Send</button>
+
+<div id="output"></div>
+
+
+<script>
+
+const ws = new WebSocket(
+    "ws://localhost:8000/ws"
+);
+ws.onopen = function(){
+    console.log("Connected to server");
+};
+
+
+ws.onclose = function(){
+    console.log("Disconnected");
+};
+
+
+ws.onmessage = function(event){
+
+    document.getElementById("output").innerHTML +=
+    event.data + "<br>";
+
+};
+
+
+function send(){
+
+    let message =
+    document.getElementById("msg").value;
+
+    ws.send(message);
+
+}
+
+</script>
+
+
+</body>
+
+</html>

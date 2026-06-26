@@ -12,10 +12,8 @@ user = db.query(User).filter(
 print("User name:", user.author)
 
 
-# access related posts
 for post in user.posts:
     print("Post title:", post.title)
     print("Post description:", post.description)
 
 
-db.close()

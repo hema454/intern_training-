@@ -4,6 +4,5 @@ from models import User
 db = SessionLocal()
 users = db.query(User).all()
 for user in users:
-    print(user.id, user.name, user.email)
+    print(user.id, user.author, user.email)
 
-db.close()

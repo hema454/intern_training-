@@ -11,7 +11,7 @@ user = db.query(User).filter(
 
 
 if user:
-    user.author = "rani"
+    user.author = "rekha"
 
     db.commit()
 
@@ -19,6 +19,3 @@ if user:
 
 else:
     print("User not found")
-
-
-db.close()

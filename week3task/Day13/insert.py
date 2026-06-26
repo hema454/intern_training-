@@ -18,4 +18,3 @@ db.refresh(new_user)
 
 print("User Added Successfully!")
 
-db.close()
