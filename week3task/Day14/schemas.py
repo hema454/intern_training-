@@ -1,13 +1,17 @@
-from sqlalchemy import Column, Integer, String, Boolean,DateTime
-from database import Base
-from sqlalchemy.sql import func
+from pydantic import BaseModel
 
-class Task(Base):
-    __tablename__ = "tasks"
+class TaskCreate(BaseModel):
+    title: str
+    message: str
+    completed: bool = False
     
-    id = Column(Integer,primary_key=True,index=True)
-    title = Column(String,nullable=False)
-    message = Column(String,nullable=True)
-    completed=Column(Boolean,default=False)
-    created_at = Column(DateTime(timezone=True),
-        server_default=func.now())
+
+
+class TaskResponse(BaseModel):
+    id: int
+    title: str
+    message: str
+    completed: bool
+
+    class Config:
+        from_attributes = True

@@ -7,7 +7,7 @@ from alembic import context
 
 
 from database import Base
-import week3task.Day14.schemas as schemas
+import week3task.Day14.models as models
 
 
 target_metadata = Base.metadata
