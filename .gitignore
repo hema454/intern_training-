@@ -1,5 +1,8 @@
 # Node.js
 **/node_modules/
+**/week5/node_modules
+**/Day19
+**/Day18
 **/dist/
 
 # Python
