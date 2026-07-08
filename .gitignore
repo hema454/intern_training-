@@ -1,12 +1,108 @@
-# Node.js
-**/node_modules/
-**/dist/
-
+# ============================
 # Python
-**/__pycache__/
-*.pyc
-**/.venv/
-**/venv/
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Environment
-**/.env
+# Virtual environments
+venv/
+venvv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Environment variables
+.env
+.env.*
+
+# SQLite databases
+*.db
+*.sqlite3
+
+# ============================
+# FastAPI / Uvicorn
+# ============================
+*.log
+
+# ============================
+# Node.js
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================
+# React / Vite
+# ============================
+dist/
+.vite/
+vite.svg
+
+# ============================
+# TypeScript
+# ============================
+*.tsbuildinfo
+
+# ============================
+# IDEs
+# ============================
+.vscode/
+.idea/
+
+# VS Code workspace files
+*.code-workspace
+
+# ============================
+# Operating System Files
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# Git
+# ============================
+*.orig
+
+# ============================
+# Temporary Files
+# ============================
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+
+# ============================
+# Coverage
+# ============================
+coverage/
+.nyc_output/
+
+# ============================
+# Misc
+# ============================
+.cache/
